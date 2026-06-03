@@ -2,7 +2,7 @@ name: Auto Email Sender
 
 on:
   schedule:
-    - cron: */15 * * * *   # every 5 minutes
+    - cron: "*/15 * * * *"   
   workflow_dispatch:
 
 jobs:
