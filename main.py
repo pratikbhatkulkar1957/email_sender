@@ -25,17 +25,29 @@ for _, row in df.iterrows():
 
     form_link = create_form_link(name, department)
 
-    subject = "Weekly Fund Requirement"
+    subject = " Fund Requirement Form - High-Value Payment Details"
 
     body = f"""
 Namaskaram {name},
 
-Please share your weekly requirement using the link below:
+As part of our fund planning process and to ensure timely processing of payments, Finance is collecting details of high-value payment requirements expected during the upcoming period.
 
-{form_link}
+Request you to fill in this Google Form with details of all payment requests with details of all payment requests from your department/team that exceed the limits specified below. This exercise will help us plan funds in advance and streamline the payment process.
+
+Entity	Bill Payment/ Advance Exceeding
+Isha Outreach	2 lakhs
+Isha Institute of Inner Sciences	2 lakhs
+Shri Yogini Trust	5 lakhs
+Isha Education	5 lakhs
+Isha Foundation	10 lakhs
+We request you to submit the details promptly upon receipt of this email.
+
+Thank you for your cooperation.
 
 Pranam,
-Pratik
+Trust Finance
+
+{form_link}
 """
 
     msg = MIMEText(body)
